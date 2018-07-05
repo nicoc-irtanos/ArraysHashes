@@ -62,5 +62,5 @@ if @answer == "o"
   puts inf6k
   puts "Parmi ces cryptomonnaies, le cours le plus haut est #{inf6k.max}. Il correspond à la cryptomonnaie suivante : #{the_cryptos_values_hash.key(inf6k.max)}"
 else
-  puts "OK. Bon en tout cas parmi ces cryptomonnaies, le cours le plus haut est #{inf6k.max}. Il correspond à la cryptomonnaie suivante : #{the_cryptos_values_hash.key(inf6k.max)}"
-end   
+  puts "OK. Bon en tout cas parmi ces cryptomonnaies, le cours le plus haut est $#{inf6k.max}. Il correspond à la cryptomonnaie suivante : #{the_cryptos_values_hash.key(inf6k.max)}"
+end
