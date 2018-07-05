@@ -1,1 +1,1 @@
-Ceci est le repo de Nicolas Culerier pour les exos sur les Arrays et les Hashes
+Ceci est le repo pour les exos sur les Arrays et les Hashes
