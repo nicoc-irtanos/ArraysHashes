@@ -2,11 +2,240 @@ journalists = ["@jcunniet","@PaulLampon","@Aziliz31","@ssoumier","@marionsouzeau
 
 puts "Il y a #{journalists.length} journalistes."
 
-if journalists
+nbarray = 0
+journalistsnb = []
 
-puts "Il y a handles incluant un numéro"
-puts "Il y a Aude"
-puts "handles commencent par une majuscule"
-puts "handles contiennent une majuscule"
+while nbarray <= journalists.length - 1  do
+  if journalists[nbarray].include?("0")
+    journalistsnb << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("1")
+    journalistsnb << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("2")
+    journalistsnb << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("3")
+    journalistsnb << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("4")
+    journalistsnb << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("5")
+    journalistsnb << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("6")
+    journalistsnb << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("7")
+    journalistsnb << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("8")
+    journalistsnb << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("9")
+    journalistsnb << journalists[nbarray]
+    nbarray = nbarray + 1
+  else
+    nbarray = nbarray + 1
+  end
+end
+
+puts "Il y a #{journalistsnb.length} handles incluant un numéro"
+
+nbarray = 0
+Aude = []
+
+while nbarray <= journalists.length - 1  do
+  if journalists[nbarray].include?("Aude")
+    Aude << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("aude")
+    Aude << journalists[nbarray]
+    nbarray = nbarray + 1
+  else
+    nbarray = nbarray + 1
+  end
+end
+
+puts "Il y a #{Aude.length} contenant aude"
+
+nbarray = 0
+Commcapital = []
+
+while nbarray <= journalists.length - 1  do
+  if journalists[nbarray].first(2) == "A"
+    Commcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].first(1) == "B"
+    Commcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].first == "C"
+    Commcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].first == "D"
+    Commcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].first == "E"
+    Commcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].first == "F"
+    Commcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].first == "G"
+    Commcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].first == "H"
+    Commcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].first == "I"
+    Commcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].first == "J"
+    Commcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].first == "K"
+    Commcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].first == "L"
+    Commcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].first == "M"
+    Commcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].first == "N"
+    Commcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].first == "O"
+    Commcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].first == "P"
+    Commcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].first == "Q"
+    Commcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].first == "R"
+    Commcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].first == "S"
+    Commcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].first == "T"
+    Commcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].first == "U"
+    Commcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].first == "V"
+    Commcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].first == "W"
+    Commcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].first == "X"
+    Commcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].first(1) == "Y"
+    Commcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].first == "Z"
+    Commcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  else
+    nbarray = nbarray + 1
+  end
+end
+
+puts "#{Commcapital.length} handles commencent par une majuscule"
+
+nbarray = 0
+Inclcapital = []
+
+while nbarray <= journalists.length - 1  do
+  if journalists[nbarray].include?("A")
+    Inclcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("B")
+    Inclcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("C")
+    Inclcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("D")
+    Inclcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("E")
+    Inclcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("F")
+    Inclcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("G")
+    Inclcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("H")
+    Inclcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("I")
+    Inclcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("J")
+    Inclcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("K")
+    Inclcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("L")
+    Inclcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("M")
+    Inclcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("N")
+    Inclcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("O")
+    Inclcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("P")
+    Inclcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("Q")
+    Inclcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("R")
+    Inclcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("S")
+    Inclcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("T")
+    Inclcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("U")
+    Inclcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("V")
+    Inclcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("W")
+    Inclcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("X")
+    Inclcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("Y")
+    Inclcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  elsif journalists[nbarray].include?("Z")
+    Inclcapital << journalists[nbarray]
+    nbarray = nbarray + 1
+  else
+    nbarray = nbarray + 1
+  end
+end
+puts "#{Inclcapital.length} handles contiennent une majuscule"
+
 puts "Dans la database, il y a _"
-puts "Voici la liste par ordre alphabétique : "
+#puts "Voici la liste par ordre alphabétique : #{journalists.sort}"
