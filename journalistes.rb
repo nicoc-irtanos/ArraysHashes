@@ -58,88 +58,88 @@ while nbarray <= journalists.length - 1  do
   end
 end
 
-puts "Il y a #{Aude.length} contenant aude"
+puts "Il y a #{Aude.length} handles contenant aude"
 
 nbarray = 0
 Commcapital = []
 
 while nbarray <= journalists.length - 1  do
-  if journalists[nbarray].first(2) == "A"
+  if journalists[nbarray][1] == "A"
     Commcapital << journalists[nbarray]
     nbarray = nbarray + 1
-  elsif journalists[nbarray].first(1) == "B"
+  elsif journalists[nbarray][1] == "B"
     Commcapital << journalists[nbarray]
     nbarray = nbarray + 1
-  elsif journalists[nbarray].first == "C"
+  elsif journalists[nbarray][1] == "C"
     Commcapital << journalists[nbarray]
     nbarray = nbarray + 1
-  elsif journalists[nbarray].first == "D"
+  elsif journalists[nbarray][1] == "D"
     Commcapital << journalists[nbarray]
     nbarray = nbarray + 1
-  elsif journalists[nbarray].first == "E"
+  elsif journalists[nbarray][1] == "E"
     Commcapital << journalists[nbarray]
     nbarray = nbarray + 1
-  elsif journalists[nbarray].first == "F"
+  elsif journalists[nbarray][1] == "F"
     Commcapital << journalists[nbarray]
     nbarray = nbarray + 1
-  elsif journalists[nbarray].first == "G"
+  elsif journalists[nbarray][1] == "G"
     Commcapital << journalists[nbarray]
     nbarray = nbarray + 1
-  elsif journalists[nbarray].first == "H"
+  elsif journalists[nbarray][1] == "H"
     Commcapital << journalists[nbarray]
     nbarray = nbarray + 1
-  elsif journalists[nbarray].first == "I"
+  elsif journalists[nbarray][1] == "I"
     Commcapital << journalists[nbarray]
     nbarray = nbarray + 1
-  elsif journalists[nbarray].first == "J"
+  elsif journalists[nbarray][1] == "J"
     Commcapital << journalists[nbarray]
     nbarray = nbarray + 1
-  elsif journalists[nbarray].first == "K"
+  elsif journalists[nbarray][1] == "K"
     Commcapital << journalists[nbarray]
     nbarray = nbarray + 1
-  elsif journalists[nbarray].first == "L"
+  elsif journalists[nbarray][1] == "L"
     Commcapital << journalists[nbarray]
     nbarray = nbarray + 1
-  elsif journalists[nbarray].first == "M"
+  elsif journalists[nbarray][1] == "M"
     Commcapital << journalists[nbarray]
     nbarray = nbarray + 1
-  elsif journalists[nbarray].first == "N"
+  elsif journalists[nbarray][1] == "N"
     Commcapital << journalists[nbarray]
     nbarray = nbarray + 1
-  elsif journalists[nbarray].first == "O"
+  elsif journalists[nbarray][1] == "O"
     Commcapital << journalists[nbarray]
     nbarray = nbarray + 1
-  elsif journalists[nbarray].first == "P"
+  elsif journalists[nbarray][1] == "P"
     Commcapital << journalists[nbarray]
     nbarray = nbarray + 1
-  elsif journalists[nbarray].first == "Q"
+  elsif journalists[nbarray][1] == "Q"
     Commcapital << journalists[nbarray]
     nbarray = nbarray + 1
-  elsif journalists[nbarray].first == "R"
+  elsif journalists[nbarray][1] == "R"
     Commcapital << journalists[nbarray]
     nbarray = nbarray + 1
-  elsif journalists[nbarray].first == "S"
+  elsif journalists[nbarray][1] == "S"
     Commcapital << journalists[nbarray]
     nbarray = nbarray + 1
-  elsif journalists[nbarray].first == "T"
+  elsif journalists[nbarray][1] == "T"
     Commcapital << journalists[nbarray]
     nbarray = nbarray + 1
-  elsif journalists[nbarray].first == "U"
+  elsif journalists[nbarray][1] == "U"
     Commcapital << journalists[nbarray]
     nbarray = nbarray + 1
-  elsif journalists[nbarray].first == "V"
+  elsif journalists[nbarray][1] == "V"
     Commcapital << journalists[nbarray]
     nbarray = nbarray + 1
-  elsif journalists[nbarray].first == "W"
+  elsif journalists[nbarray][1] == "W"
     Commcapital << journalists[nbarray]
     nbarray = nbarray + 1
-  elsif journalists[nbarray].first == "X"
+  elsif journalists[nbarray][1] == "X"
     Commcapital << journalists[nbarray]
     nbarray = nbarray + 1
-  elsif journalists[nbarray].first(1) == "Y"
+  elsif journalists[nbarray][1] == "Y"
     Commcapital << journalists[nbarray]
     nbarray = nbarray + 1
-  elsif journalists[nbarray].first == "Z"
+  elsif journalists[nbarray][1] == "Z"
     Commcapital << journalists[nbarray]
     nbarray = nbarray + 1
   else
@@ -237,5 +237,14 @@ while nbarray <= journalists.length - 1  do
 end
 puts "#{Inclcapital.length} handles contiennent une majuscule"
 
-puts "Dans la database, il y a _"
-#puts "Voici la liste par ordre alphabétique : #{journalists.sort}"
+nbarray = 0
+i = 0
+
+while nbarray <= journalists.length - 1  do
+  i = i + journalists[nbarray].count("_")
+  nbarray = nbarray + 1
+end
+
+puts "Dans la database, il y a #{i} _"
+
+puts "Voici la liste par ordre alphabétique : #{journalists.sort}"
