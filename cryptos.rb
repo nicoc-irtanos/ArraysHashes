@@ -3,12 +3,17 @@ Values = ["$6558.07", "$468.95", "$0.487526", "$762.84", "$8.86", "$85.26", "$0.
 
 puts "Nous avons référencé #{Cryptos.length} cryptomonnaies"
 
+#Pour enlever le $ des cours de cryptomonnaies
+
 Values.each do |value|
   value.slice!(0)
-
 end
 
+#Conversion des strings de l'array de l'énoncé en une array de float
+
 Valuesfloat = Values.map(&:to_f)
+
+#remplissage de la hashe
 
 i = 0
 the_cryptos_values_hash = {}
@@ -18,11 +23,15 @@ while i <= Cryptos.length - 1 do
   i = i + 1
 end
 
-
+#Affichage de la cryptomonnaie avec la plus haute valeur.
 
 puts "La plus haute valeur est $#{Valuesfloat.max}. Elle correspond à la cryptomonnaie #{the_cryptos_values_hash.key(Valuesfloat.max)}."
 
+#Affichage de la cryptomonnaie avec la plus petite valeur.
+
 puts "La plus petite valeur est $#{Valuesfloat.min}. Elle correspond à la cryptomonnaie : #{the_cryptos_values_hash.key(Valuesfloat.min)}"
+
+#Boucle pour calculer le nombre de cryptomonnaies avec le mot coin
 
 nbarray = 0
 coin = []
@@ -43,6 +52,8 @@ while nbarray <= Cryptos.length - 1 do
 end
 
 puts "#{coin.length} cryptos contiennent le mot coin"
+
+#Boucle pour stocker les crytomonnaies dont le cours est inférieur à 6000 dans une array
 
 inf6k = []
 k = 0
